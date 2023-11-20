@@ -108,7 +108,7 @@ function Login() {
            <Inputlabelmail label={"Email"}  />
     <Inputlabelpass label={"Mot de passe"} inputid={"Motdepasse"} />
     <button className="Login-submit" type="submit">Se connecter</button>
-    <button className="Login-submit-google d-flex flex-direction-row justify-content-center " type="submit"> <motion.img className="Login-google"  src={google} alt="google"/> <p className="w-30%">continuer avec google</p></button>
+    <button className="Login-submit-google d-flex flex-direction-row justify-content-center " type="submit"> <motion.img className="Login-google"  src={google} alt="google"/> </button>
     </form> )
   }
   function Forminscription(){
@@ -122,7 +122,7 @@ function Login() {
            <Inputlabelpass label={"Mot de passe"} inputid={"MotDePasse"} />
            <Inputlabelpass label={"Confirmer"} inputid={"ConfirmerMotDePasse"} />
     <button className="Login-submit" type="submit">S'inscrire</button>
-    <button className="Login-submit-google d-flex flex-direction-row justify-content-center " type="submit"> <motion.img className="Login-google"  src={google} alt="google"/> <p className="w-30%">s'inscrire avec google</p></button>
+    <button className="Login-submit-google d-flex flex-direction-row justify-content-center " type="submit"> <motion.img className="Login-google"  src={google} alt="google"/> </button>
     </form> )
   }
  
