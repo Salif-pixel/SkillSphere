@@ -173,6 +173,9 @@
    margin: 5px;
     
 }
+.Login_illustration_container{
+    overflow: hidden;
+}
 
 
 
@@ -194,7 +197,8 @@
           position: absolute;
           top: 800px;
           width: 100%;
-          overflow: hidden
+          overflow: hidden;
+          max-height: 900px;
     }
     .row-to-column{
         display: flex;
@@ -213,11 +217,11 @@
         cursor: pointer;
         font-size: 70%;
     }
-    .Login-section1{
-        height: 2200px;
+    /* .Login-section1{
+        max-height: ;
         overflow: hidden;
     
-      }
+      } */
      
    
   }

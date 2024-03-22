@@ -4,7 +4,7 @@ import Login_illustration from "../assets/Login.png"
 import oeil_ouvert from "../assets/oeil-ouvert.png"
 import oeil_fermé from "../assets/oeil-fermé.png"
 import google from "../assets/google.png"
-import { useState, useEffect } from "react";
+import { useState,useCallback, useEffect, useTransition } from "react";
 
 import "bootstrap/dist/css/bootstrap.min.css"
 import Header from "./Header"
@@ -12,6 +12,16 @@ function Login() {
 
 
   const [scope, animate] = useAnimate()
+  // const [backenData,setBackenData] =useState([{}])
+  // useEffect(()=>{
+  //   fetch("/api").then(
+  //     response=> response.json()
+  //   ).then(
+  //     data=>{
+  //       setBackenData(data)
+  //     }
+  //   )
+  // },[])
  const handleKeyDown = (event) => {
     // Si la touche appuyée est "Enter" (code 13)
     if (event.keyCode === 13) {
@@ -148,9 +158,11 @@ function Login() {
           <Formslider/>
         </motion.div >
       </motion.div>
-      <motion.div  className="col">  <motion.img className="Login_illustration  Login_illustration_resp " src={Login_illustration} /></motion.div>
+      <motion.div  className="col Login_illustration_container">  <motion.img className="Login_illustration  Login_illustration_resp " src={Login_illustration} /></motion.div>
     </div>
-    <div></div>
+    {/* <div>{ (typeof backenData.users === "undefined") ? (<p>loading....</p>) : (backenData.users.map((user,i)=>(
+      <p key={i}>{user.nom}</p>
+    )))}</div> */}
     
 
 
